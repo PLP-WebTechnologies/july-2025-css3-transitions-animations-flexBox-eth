@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+  font-family: sans-serif;
+  padding: 40px;
+  background: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* === Part 1: CSS Animations === */
+
+/* Button with hover transition */
+.fancy-btn {
+  background: #0077ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.fancy-btn:hover {
+  background: #0057cc;
+  transform: scale(1.1);
+}
+
+/* Fade in box using keyframes */
+.fade-box {
+  width: 200px;
+  padding: 15px;
+  background: #ffe;
+  margin-top: 15px;
+  animation: fadeIn 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bouncing box */
+.bounce-box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+  border-radius: 10px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* === Part 3: JavaScript + CSS === */
+
+.slide-box {
+  background: lightseagreen;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden {
+  transform: translateX(-150%);
+  opacity: 0;
+}
