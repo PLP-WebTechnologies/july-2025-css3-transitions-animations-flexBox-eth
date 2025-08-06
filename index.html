@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Animation Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>🎨 Bringing Web Pages to Life</h1>
+
+  <!-- Part 1: CSS Transitions & Keyframes -->
+  <section>
+    <h2>Part 1: CSS Animation Examples</h2>
+    <button class="fancy-btn">Hover Me</button>
+    <div class="fade-box">I'm fading in slowly...</div>
+    <div class="bounce-box">Bouncing Box</div>
+  </section>
+
+  <!-- Part 2: JS Functions -->
+  <section>
+    <h2>Part 2: JavaScript Functions</h2>
+    <p>Enter a number to double:</p>
+    <input type="number" id="numInput" />
+    <button onclick="handleDouble()">Double It</button>
+    <p id="result"></p>
+  </section>
+
+  <!-- Part 3: Combine JS + CSS -->
+  <section>
+    <h2>Part 3: Combine JavaScript + CSS Animations</h2>
+    <button onclick="triggerSlide()">Toggle Slide Box</button>
+    <div class="slide-box hidden" id="slideBox">I'm a sliding box!</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
